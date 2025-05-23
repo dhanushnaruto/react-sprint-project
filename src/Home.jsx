@@ -44,7 +44,6 @@ const AmrutamWebpage = () => {
   if (currentView === 'profile') {
     return (
       <div className="min-h-screen bg-gray-50">
-        {/* Header */}
         <header className="bg-white shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
@@ -125,7 +124,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* About Section */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-lg font-semibold">A Little About me</h3>
@@ -165,7 +163,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Specializations */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-semibold mb-4">I Specialize In</h3>
                 <div className="grid grid-cols-4 gap-4">
@@ -196,7 +193,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Concerns */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-semibold mb-4">The Concerns I Treat</h3>
                 <div className="flex flex-wrap gap-2">
@@ -208,7 +204,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Experience */}
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-semibold mb-4">My Work Experience</h3>
                 <p className="text-green-600 font-medium mb-4">I HAVE BEEN IN PRACTICE FOR : {doctorData.experience}</p>
@@ -228,7 +223,7 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Reviews */}
+
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <h3 className="text-lg font-semibold mb-4">Featured Reviews (102)</h3>
                 <div className="space-y-4">
@@ -260,7 +255,6 @@ const AmrutamWebpage = () => {
               </div>
             </div>
 
-            {/* Right Column - Appointment Booking */}
             <div className="space-y-6">
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="text-right mb-4">
@@ -370,10 +364,8 @@ const AmrutamWebpage = () => {
     );
   }
 
-  // Original search page
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -397,14 +389,12 @@ const AmrutamWebpage = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-50 to-green-100 py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
             Find Expert Doctors For An In-Clinic Session Here
           </h2>
           
-          {/* Search Bar */}
           <div className="flex max-w-2xl mx-auto bg-white rounded-lg shadow-sm">
             <div className="flex items-center px-4 py-3 border-r border-gray-200">
               <MapPin className="h-5 w-5 text-gray-400 mr-2" />
@@ -426,7 +416,6 @@ const AmrutamWebpage = () => {
         </div>
       </div>
 
-      {/* Filters Section */}
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex flex-wrap gap-4 items-center mb-6">
           <div className="flex space-x-4">
@@ -448,7 +437,6 @@ const AmrutamWebpage = () => {
           </div>
         </div>
 
-        {/* Active Filters */}
         <div className="flex flex-wrap gap-2 mb-8">
           {selectedFilters.hairCare && (
             <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700">
@@ -496,11 +484,9 @@ const AmrutamWebpage = () => {
           )}
         </div>
 
-        {/* Doctor Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {[1, 2, 3].map((index) => (
             <div key={index} className="bg-cream-50 rounded-lg p-6 shadow-sm border border-yellow-100">
-              {/* Doctor Image */}
               <div className="relative mb-4">
                 <div className="w-24 h-24 mx-auto rounded-full bg-gray-200 overflow-hidden">
                   <img 
@@ -515,7 +501,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Doctor Info */}
               <div className="text-center mb-4">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Dr. Prerna Narang
@@ -536,7 +521,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Consultation Options */}
               <div className="flex justify-between text-xs mb-4">
                 <div className="text-center">
                   <div>Video Consultation</div>
@@ -548,7 +532,6 @@ const AmrutamWebpage = () => {
                 </div>
               </div>
 
-              {/* Action Buttons */}
               <div className="space-y-3">
                 <button className="w-full py-2 text-green-700 border border-green-700 rounded-lg hover:bg-green-50 transition-colors">
                   View Profile
